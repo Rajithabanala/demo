@@ -1,0 +1,14 @@
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+	#include <stdio.h>
+
+int main()
+{
+	int a,b;
+	printf("enter the numbers");
+	scanf("%d%d",&a,&b);
+
+	printf("\nsum of numbers %d",a+b);
+
+	return 0;
+}
+

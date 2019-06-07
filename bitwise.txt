@@ -1,0 +1,11 @@
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+#include <stdio.h>
+
+int main()
+{
+int x =10,y =8;
+printf("x|y:%dx&y:%dx^y:",x|y,x&y,x^y);
+
+	return 0;
+}
+

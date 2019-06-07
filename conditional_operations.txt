@@ -1,0 +1,13 @@
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c;
+	printf("enter the numbers");
+	scanf("%d%d\n",&a,&b);
+	c=(a>b?a:b);
+	printf("greater the :%d",c);
+	return 0;
+}
+

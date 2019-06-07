@@ -1,0 +1,12 @@
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+#include <stdio.h>
+
+int main()
+{
+	int i,count=0;
+	for(i=0;i<11;i++)
+	count=count+i;
+	printf("%d",count);
+	return 0;
+}
+

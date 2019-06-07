@@ -1,0 +1,15 @@
+
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+#include <stdio.h>
+
+int main()
+{
+	int i;
+	float j;
+	printf("enter the numbers");
+	scanf("%d%f\n",&i,&j);
+	printf("%x\n",i);
+	printf("%o\n",i);
+	return 0;
+}
+

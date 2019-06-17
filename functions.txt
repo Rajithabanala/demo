@@ -1,0 +1,50 @@
+// Shared via Compiler App https://g633x.app.goo.gl/TPlw
+#include <stdio.h>
+
+
+
+
+	int sum(int x,int y);
+	int sub (int x,int y);
+	int mul(int x,int y);
+	int div(int x,int y);
+	int z;
+	int main()
+	{
+		int a,b,cho;
+	 a=19;
+	 b=12;
+	 cho=1;
+	 if(cho==1)
+	 printf("%d",sum(a,b));
+	 else if(cho==2)
+	 printf("%d",sub(a,b));
+	 else if (cho==3)
+	 printf("%d",mul(a,b));
+	 else if(cho==4)
+	 printf("%d",div(a,b));
+	return 0;
+}
+int sum(int x,int y)
+{
+
+	z=x+y;
+
+ return(z);
+ }
+ int sub(int  x,int y)
+ {
+z=x-y;
+ return(z);
+ }
+ mul(int x,int y)
+ {
+ z= x*y;
+ return(z);
+ }
+ div(int x,int y)
+ {
+ z= x/y;
+ return(z);
+ }
+

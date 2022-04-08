@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "b28aba0f-c8a2-48b9-ac93-ac78eabfbebc",
+		"name": "GitHubFinal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUserReposPrivateAndPublic",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_H9D26bubbvI4i8pt8Moa61Gc5XpkyY0GNeUY",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserDetails",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_H9D26bubbvI4i8pt8Moa61Gc5XpkyY0GNeUY",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBranchesInRepos",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_JDbbI4oJ5dC1x3EXoXeEmukWbJ2J3u1dLRrq",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/harish0555/TestPrivateRepo/branches",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"harish0555",
+						"TestPrivateRepo",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateReposPrivate",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_H9D26bubbvI4i8pt8Moa61Gc5XpkyY0GNeUY",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"TestPrivateRepo\",\r\n \"description\": \"Test POST MAN API_1\",\r\n  \"homepage\": \"https://github.com\",\r\n  \"private\": true\r\n\t\r\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/user/repos",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAFileWithFolderInRepo",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_H9D26bubbvI4i8pt8Moa61Gc5XpkyY0GNeUY",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"message\": \"New Commit SQL File from API 2\",\r\n\r\n    \"content\":  \"U2FtcGxlIHRleHQgZmlsZSBjcmVhdGVkIHRocm91Z2ggUG9zdG1hbi4gVGV4dCBVcGRhdGVk\",\r\n\r\n    \"branch\": \"main\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/harish0555/TestPrivateRepo/contents/ConnectionPoints/github_v3.txt",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"harish0555",
+						"TestPrivateRepo",
+						"contents",
+						"ConnectionPoints",
+						"github_v3.txt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadFileContent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://raw.githubusercontent.com/harish0555/TestPrivateRepo/main/ConnectionPoints/github_v3.txt?token=AEA4C3A4CCJD3ERKMNGHXVTCJWFD4",
+					"protocol": "https",
+					"host": [
+						"raw",
+						"githubusercontent",
+						"com"
+					],
+					"path": [
+						"harish0555",
+						"TestPrivateRepo",
+						"main",
+						"ConnectionPoints",
+						"github_v3.txt"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "AEA4C3A4CCJD3ERKMNGHXVTCJWFD4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Files In Repo With Latest Commits",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ghu_JDbbI4oJ5dC1x3EXoXeEmukWbJ2J3u1dLRrq",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/harish0555/TestPrivateRepo/branches",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"harish0555",
+						"TestPrivateRepo",
+						"branches"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
